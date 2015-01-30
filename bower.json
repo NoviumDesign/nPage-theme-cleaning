@@ -1,0 +1,22 @@
+{
+  "name": "nPage-theme-cleaning",
+  "version": "0.0.0",
+  "authors": [
+    "Anton Kjorck Linden <anton@noviumdesign.se>"
+  ],
+  "description": "A nPage theme for cleaning companies",
+  "main": "index.html",
+  "keywords": [
+    "nPage",
+    "cleaning"
+  ],
+  "license": "private",
+  "homepage": "https://www.noviumdesign.se",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
