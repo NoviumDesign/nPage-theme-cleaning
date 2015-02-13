@@ -1,0 +1,124 @@
+@charset "UTF-8";
+
+/** 
+ * Default CSS Drop-Down Menu Theme
+ *
+ * @file		default.css
+ * @name		Default
+ * @version		0.1.1
+ * @type		transitional
+ * @browsers	Windows: IE7+, Opera7+, Firefox3+
+ *				Mac OS: Safari2+, Firefox3+
+ *
+ * @link		http://www.lwis.net/free-css-drop-down-menu
+ * @copyright	2008-2012 Live Web Initiatives, http://www.lwis.net
+ *
+ */
+
+
+/* -- Base drop-down styling -- */
+
+ul.dropdown {
+	font-weight: bold;
+}
+
+	ul.dropdown li {
+		padding: 7px 10px;
+		border-style: solid;
+		border-width: 1px 1px 1px 0;
+		border-color: #fff #d9d9d9 #d9d9d9;
+		color: $inverted-color;
+		position: relative;
+	}
+
+	ul.dropdown li.hover,
+	ul.dropdown li:hover,
+	ul.dropdown li.on {
+		background-color: darken($theme-color, 10%);
+		color: $inverted-color;
+	}
+
+	ul.dropdown a:link,
+	ul.dropdown a:visited	{ color: $inverted-color; text-decoration: none; }
+	ul.dropdown a:hover		{ color: $inverted-color; }
+	ul.dropdown a:active	{ color: $inverted-color; }
+
+	/* -- level mark -- */
+
+	ul.dropdown ul {
+		width: 150px;
+		margin-top: 1px;
+		background-color: #FFFFFF;
+	}
+
+		ul.dropdown ul li {
+			font-weight: normal;
+		}
+
+
+/* -- Supporting class `dir` -- */
+
+ul.dropdown *.dir {
+	padding-right: 20px;
+	&:after {
+		right: 7px;
+		top: 50%;
+		border: solid transparent;
+		content: " ";
+		height: 0;
+		width: 0;
+		position: absolute;
+		pointer-events: none;
+		border-color: rgba(255, 255, 255, 0);
+		border-top-color: #FFFFFF;
+		border-width: 5px;
+		margin-left: -5px;
+	}
+}
+
+//sub-nav colors
+ul.dropdown li.dir ul li a,
+ul.dropdown li.dir ul li.dir {
+	color: #000000;
+	&:hover {
+		color: #ffffff;
+	}
+}
+
+
+/* -- Components override -- */
+
+ul.dropdown-horizontal ul *.dir {
+	padding-right: 15px;
+	&:after {
+		right: 7px;
+		top: 50%;
+		border: solid transparent;
+		content: " ";
+		height: 0;
+		width: 0;
+		position: absolute;
+		pointer-events: none;
+		border-color: rgba(255, 255, 255, 0);
+		border-left-color: #FFFFFF;
+		border-width: 5px;
+		margin-top: -5px;
+	}
+}
+
+ul.dropdown-upward *.dir {
+	background-image: url(../../../../images/default/nav-arrow-top.png);
+}
+
+ul.dropdown-vertical *.dir,
+ul.dropdown-upward ul *.dir {
+	background-image: url(../../../../images/default/nav-arrow-right.png);
+}
+
+ul.dropdown-vertical-rtl *.dir,
+ul.dropdown-horizontal > li.dropdown-vertical-rtl ul *.dir {
+	padding-right: 10px;
+	padding-left: 15px;
+	background-image: url(../../../../images/default/nav-arrow-left.png);
+	background-position: 2px 50%;
+}
