@@ -7,20 +7,38 @@
     border: 0
     border-radius: 0
     margin-bottom: 0
+    background-color: $base-background-color
+    text-align: center
+
+  input::-webkit-input-placeholder
+    text-align: center
+
+  input:-moz-placeholder
+    text-align: center
+
+  input::-moz-placeholder
+    text-align: center
+
+  input:-ms-input-placeholder  
+    text-align: center
 
   .price-full, .price-reduced
-    width: 50%
+    width: 100%
     float: left
     padding: 10px 0px 30px 0px
     text-align: center
 
+    +breakpoint($tablet)
+      width: 50%
+      min-height: 125px
+
+    .price
+      font-family: $sans-serif
+      font-weight: 700
+      font-size: $h2-font-size
+
   .description
     display: block
-
-  .price
-    font-family: $sans-serif
-    font-weight: 700
-    font-size: $h2-font-size
 
   .price-full
     background-color: $medium-gray
