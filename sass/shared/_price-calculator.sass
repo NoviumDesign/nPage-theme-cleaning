@@ -1,7 +1,7 @@
 .module-price-calculator-stay-cleaning
   float: left
   width: 100%
-  padding: 20px 0px
+  padding: 25px 0px 30px 0px
 
   input
     border: 0
@@ -25,7 +25,7 @@
   .price-full, .price-reduced
     width: 100%
     float: left
-    padding: 10px 0px 30px 0px
+    padding: 10px 10px 30px 10px
     text-align: center
 
     +breakpoint($tablet)
@@ -35,10 +35,15 @@
     .price
       font-family: $sans-serif
       font-weight: 700
-      font-size: $h2-font-size
+      font-size: $h3-font-size
 
   .description
     display: block
+    font-family: $sans-serif
+    line-height: 1.25em
+
+    +breakpoint($tablet)
+      min-height: 55px
 
   .price-full
     background-color: $medium-gray
@@ -47,4 +52,7 @@
     background-color: $theme-color
 
     .price
+      color: $inverted-color
+
+    .description
       color: $inverted-color

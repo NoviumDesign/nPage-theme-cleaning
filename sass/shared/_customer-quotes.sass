@@ -1,0 +1,20 @@
+.customer-quote-section
+  +breakpoint($mobile)
+    h3
+      text-align: left
+
+.quotation-mark-container
+  
+  +breakpoint($tablet)
+    +span(2 inside no-gutters)
+    margin-left: 0
+    margin-right: 0
+    
+    &:nth-child(2)
+      padding-right: gutter()
+
+    &:last-child
+      padding-left: gutter()
+
+  img
+    max-width: 125px
