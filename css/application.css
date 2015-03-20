@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* Load mixin libs */
 /* Load Susy */
 /* Load Breakpoint */
@@ -1701,8 +1702,12 @@ button {
 #header .logo-wrapper {
   margin-top: 7px; }
 
+.office-cleaning-image {
+  max-width: 558px;
+  max-height: 461px; }
+
 @media (max-width: 768px) {
-  .customer-quote-section h3 {
+   .customer-quote-section h3 {
     text-align: left; } }
 
 @media (min-width: 768px) {
@@ -1719,7 +1724,7 @@ button {
     .quotation-mark-container:last-child {
       padding-left: 2.7777777778%; } }
 .quotation-mark-container img {
-  max-height: 125px;
+  max-height: 98px;
   max-width: 125px; }
 
 @media (min-width: 768px) {
